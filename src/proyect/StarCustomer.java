@@ -1,5 +1,6 @@
 package proyect;
 
-public class StarCustomer {
+public class StarCustomer extends Customer {
 
+	
 }
