@@ -3,14 +3,28 @@ package proyect;
 public class Shop {
 
 	public String name;
-	public String shop_identifier;
-	public String shop_area; //No sabemos a qu� leches se refiere
-	public String [] working_employees_set;
-	public int rent;
-	public boolean state; //Opened or closed
+	public String id;//it´s a String because we don´t know if an identifier contains letters.
+	public String area; 
+	public ShopEmployee [] employeesList;
+	public Catalog [] catalog ; //list of product types. 
+	public double rent;
+	public boolean state; //Opened or closed.
+	public Product [] productsList; /*list of products available at the store . 
+	                                   Not the same as the catalog */
+	                                     
 	
+	public Shop(String name,String id,String area,ShopEmployee [] employeesList,Catalog [] catalog,  
+			              double rent, boolean state,Product [] productsList){
+		
+		this.name=name;
+		this.id=id;
+		this.area=area;
+		this.employeesList=employeesList;
+		this.catalog=catalog;
+		this.rent=rent;
+		this.state=state;
+		this.productsList=productsList;
+		
+	               }
 	
-	public Shop (String name){
-		this.name = name;
-	}
-}
+                }

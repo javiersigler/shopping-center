@@ -2,6 +2,12 @@ package proyect;
 
 public class Customer extends Person {
 	
-	public boolean hasCard; //Tiene o no tiene CARD
+	// Esto parece que no sirve pa na... se podrá eliminar?
 	
-}
+	
+	
+	}
+ 
+
+
+
