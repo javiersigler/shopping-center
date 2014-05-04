@@ -1,40 +1,32 @@
 package proyect;
-import java.util.Arrays;
-import java.util.Scanner;
-
-
-
 
 public class ShopEmployee extends Employee {
 	
-	String prefix = "T";
+	public static String idPrefix = "T"; 
+	public String id;
 	
-	public String identifier;
-	public String status; //Shop manager/Staff
-	public String [] shop_identifier_shop_employee; // Escrito como un array, hay que crear un método que meta los valores dentro (tiendas)
+	// public String Status : shop manager and stuff. 
+	public String [] shopsEmployeeWorks;// we only need the name shops the shops , no more data. 
 
-    Scanner sc = new Scanner(System.in);
+	
+	
+		public ShopEmployee(String name, String surnames, String DNI, String address,String telephoneNumber,
+                     String socialInsuranceNnumber,String workShift, double salary,String id,  String [] shopsEmployeeWorks){
 
-    public ShopEmployee (String identifier_number){
-
-        this.identifier = prefix + identifier_number;
-
-
-    }
-    public int n = 0;
-    public void shopsWhereWorks () {
-
-        System.out.println("Introduce the name of the shop in which the employee is working, all together using spaces." +
-                "Type 'Supercalifragilisticoespialidoso' When you are done.");
-
-        while (!sc.next().equals("Supercalifragilisticoespialidoso")) {
-            shop_identifier_shop_employee[n] = sc.next();
-            n++;
-        }
-        Arrays.sort(shop_identifier_shop_employee);
+			this.name=name;
+			this.surnames=surnames;
+			this.DNI=DNI;
+			this.address=address;
+			this.telephoneNumber=telephoneNumber;
+			this.socialInsuranceNnumber=socialInsuranceNnumber;
+			this.workShift=workShift;
+			this.salary=salary;
+	        this.id=id;
+	        this.shopsEmployeeWorks=shopsEmployeeWorks;
+	
+		           }
+		
+		      }
 
 
-    }
-
-}
 
